@@ -1,0 +1,16 @@
+/*
+* advantages
+*/
+
+.advantages {
+    &_item {
+        &__wrap_img {
+            
+        }
+        &__text {
+            text-align: center;
+            width: 100%;
+            background: rgba(0,0,0,.4);
+        }
+    }
+}

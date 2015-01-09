@@ -146,5 +146,73 @@ html, body {
 /*
 * header
 */
+.header_phone_icon {
+  margin-left: 90px;
+  margin-top: 38px;
+  width: 90px;
+  height: 90px;
+  background-image: url(../img/fig1.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-attachment: scroll;
+  background-size: 90px 90px;
+}
+.header_logo {
+  margin: 0 auto;
+  width: 534px;
+  height: 236px;
+  background-image: url(../img/fig2.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-attachment: scroll;
+  background-size: 534px 236px;
+}
+.header_feedback__mail_icon {
+  margin-right: 90px;
+  margin-top: 38px;
+  width: 90px;
+  height: 90px;
+  background-image: url(../img/fig3.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-attachment: scroll;
+  background-size: 90px 90px;
+}
+
+/*
+* top_description
+*/
+.top_description {
+  width: 100%;
+  height: 489px;
+  background-image: url(../img/fig4.jpg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+* advantages
+*/
+.advantages_item__text {
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*
+* feedback_form
+*/
+/*
+* shop_title
+*/
+/*
+* shop_text
+*/
+/*
+* footer
+*/
 
 /*# sourceMappingURL=style.css.map */

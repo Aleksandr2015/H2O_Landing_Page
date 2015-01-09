@@ -2,6 +2,40 @@
 * header
 */
 
-header {
+.header {
+    &_phone_icon {
+        margin-left: 90px;
+        margin-top: 38px;
+        width: 90px;
+        height: 90px;
+        background-image: url(../img/fig1.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-attachment: scroll;
+        background-size: 90px 90px;
+    }
+    &_logo {
+        margin: 0 auto;
+        width: 534px;
+        height: 236px;
+        background-image: url(../img/fig2.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-attachment: scroll;
+        background-size: 534px 236px;
+    }
     
+    &_feedback {
+        &__mail_icon {
+            margin-right: 90px;
+            margin-top: 38px;
+            width: 90px;
+            height: 90px;
+            background-image: url(../img/fig3.png);
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-attachment: scroll;
+            background-size: 90px 90px;
+        }
+    }
 }
