@@ -2,6 +2,46 @@
 * Basic styles
 */
 
+* {
+    outline: none !important;
+}
+
 html, body {
     background-color: #fff;
+    font-family: 'BravoSC', monospace;
+}
+
+/* nicescroll */
+#ascrail2000, #ascrail2000-hr {
+  z-index: 999 !important;
+}
+
+#ascrail2000.nicescroll-rails {
+  width: 10px !important;
+  background-color: #9BD0B5 !important;
+  background-color: rgba(155,208,181,.3) !important;
+}
+
+#ascrail2000-hr.nicescroll-rails {
+  height: 10px !important;
+  background-color: #9BD0B5 !important;
+  background-color: rgba(155,208,181,.3) !important;
+}
+
+#ascrail2000 > div {
+  width: 10px !important;
+  background: #1DD076 !important;
+  border-color: #1DD076 !important;
+  border-radius: 3px !important;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+#ascrail2000-hr > div {
+  height: 10px !important;
+  background: #1DD076 !important;
+  border-color: #1DD076 !important;
+  border-radius: 3px !important;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }

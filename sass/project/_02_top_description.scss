@@ -11,4 +11,15 @@
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -22px;
+    & p {        
+        margin-top: 115px;
+        color: #FFF;
+        font-family: "BravoSC";
+        font-size: 29px;
+        line-height: 48px;
+        font-weight: 400;
+    }
 }

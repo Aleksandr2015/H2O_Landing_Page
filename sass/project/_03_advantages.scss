@@ -3,14 +3,31 @@
 */
 
 .advantages {
+    padding-top: 25px;
     &_item {
+        width: 205px;
+        height: 205px;
+        margin: 0 auto 25px;
+        /*overflow: hidden;*/
         &__wrap_img {
-            
+            margin-bottom: -75px;
         }
         &__text {
             text-align: center;
             width: 100%;
-            background: rgba(0,0,0,.4);
+            background: rgba(0,0,0,.4);            
+            color: #FFF;
+            font-family: "BravoSC";
+            font-size: 21px;
+            font-weight: 400;
+            height: 75px;
+            line-height: 30px;
+            position: relative;
+            padding-top: 9px;
+        }
+        &__text._verticat_center {
+            line-height: 75px;
+            padding-top: 0px;
         }
     }
 }

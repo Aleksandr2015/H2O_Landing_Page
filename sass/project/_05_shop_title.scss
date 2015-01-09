@@ -3,5 +3,22 @@
 */
 
 .shop_title {
-    
+    &_wrap {
+            margin: 10px auto;
+            width: 354px;;
+            height: 103px;
+            background-image: url(../img/fig14.png);
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-attachment: scroll;
+            background-size: 354px 103px;
+            background-position: 0 0;
+        &__text {
+            line-height: 103px;
+            color: #000;
+            font-family: "BravoSC";
+            font-size: 106px;
+            font-weight: 400;
+        }
+    }
 }

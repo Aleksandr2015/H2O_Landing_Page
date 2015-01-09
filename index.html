@@ -5,12 +5,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>H2O+ - отопление, водоснабжение, канализация</title>    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <!-- Page styles -->    
     <link rel="stylesheet" href="css/style.css">
     <!-- fonts -->
-    <link rel="stylesheet" href="">    
+    <link rel="stylesheet" href="fonts/bravosc.css">    
     <!--[if IE]>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -21,6 +23,34 @@
 </head>
 <body> 
 
+   <!-- callback -->
+    <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedback" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <div class="modal-body">                        
+            <div class="feedback_form_wrapper">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+                        <div class="clearfix"></div>                        
+                        <form action="mail.php" method="post" class="feedback_form_wrapper__form">
+                              <div class="form-group">                                
+                                <input type="text" class="form-control feedback_form_wrapper__form___input" id="name" name="name" placeholder="Ваше имя*" required pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
+                              </div>
+                              <div class="form-group">                                
+                                <input style="width:47%" type="phone" class="form-control feedback_form_wrapper__form___input pull-left" id="phone" name="phone" placeholder="Ваш телефон*" required pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
+                                <input style="width:47%" type="text" class="form-control feedback_form_wrapper__form___input pull-right" id="time" name="time" placeholder="Желаемое время звонка">
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="form-group">
+                                  <textarea id="text" name="text" class="form-control feedback_form_wrapper__form___textarea" rows="5" placeholder="Ваше сообщение"></textarea>
+                              </div>                              
+                              <button type="submit" class="btn feedback_form_wrapper__button">Отправить</button>
+                        </form>
+                    </div>          
+          </div>          
+        </div>
+      </div>
+    </div>
+   
     <!-- header / start -->
     <header class="header">
        <div class="container">
@@ -34,7 +64,7 @@
                     <div class="header_info">Отопление, водоснабжение, канализация</div>
                 </div>
                 <div class="col-xs-3">
-                    <div class="header_feedback">
+                    <div class="header_feedback" data-toggle="modal" data-target="#feedback">
                         <div class="header_feedback__mail_icon"></div>
                         <div class="header_feedback__text">Обратный звонок</div>
                     </div>
@@ -97,7 +127,7 @@
                         <div class="advantages_item__wrap_img">
                             <img src="img/fig7.jpg" alt="">
                         </div>
-                        <div class="advantages_item__text">
+                        <div class="advantages_item__text _verticat_center">
                             Гарантия 1 год
                         </div>
                     </div>
@@ -144,7 +174,7 @@
                         </div>
                         <div class="advantages_item__text">
                             Фотоотчеты <br>
-                            специалэтапов работы
+                            этапов работы
                         </div>
                     </div>
                 </div>
@@ -170,11 +200,22 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="feedback_form_wrapper">
-                        <div class="feedback_form_title">
+                        <div class="feedback_form_wrapper__title">
                             Форма обратной связи
                         </div>
-                        <form action="">
-                            тут будет форма
+                        <form action="mail.php" method="post" class="feedback_form_wrapper__form">
+                              <div class="form-group">                                
+                                <input type="text" class="form-control feedback_form_wrapper__form___input" id="name" name="name" placeholder="Ваше имя*" required pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
+                              </div>
+                              <div class="form-group">                                
+                                <input style="width:47%" type="phone" class="form-control feedback_form_wrapper__form___input pull-left" id="phone" name="phone" placeholder="Ваш телефон*" required pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
+                                <input style="width:47%" type="text" class="form-control feedback_form_wrapper__form___input pull-right" id="time" name="time" placeholder="Желаемое время звонка">
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="form-group">
+                                  <textarea id="text" name="text" class="form-control feedback_form_wrapper__form___textarea" rows="5" placeholder="Ваше сообщение"></textarea>
+                              </div>                              
+                              <button type="submit" class="btn feedback_form_wrapper__button">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -212,7 +253,6 @@
                         Телефон: 8 (3456) 268 269 <br>
                         8-982-970-5914 <br>
                         vk.com/h2otob <br>
-                        h2o.tob@mail.ru <br>
                         Режим работы: <br>
                         Будние дни с 8:00-19:00 <br>
                         Выходные с 9:00-18:00 <br>
@@ -223,6 +263,51 @@
         </div>    
     </section>
     <!-- shop_text / end -->      
+    
+    <!-- shop_title / start -->
+    <section class="shop_title">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="shop_title_wrap">
+                        <div class="shop_title_wrap__text">Карта</div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!-- shop_title / end -->  
+    
+    <!-- map / start -->
+    <section class="map">
+        <!-- Карта (начало) -->        
+        <div id="ymaps-map-id_1140437" style="width: auto; height: 515px;"></div>
+        <script type="text/javascript">
+        function fid_1140437(ymaps) {
+            var objects = [];
+            var events = {};
+            try{
+
+            }catch(e){
+                alert(e);
+            };
+            var map; objects["map1"] = map = new ymaps.Map("ymaps-map-id_1140437", {
+                center: [58.209628, 68.267087], 
+                zoom: 17,
+                type: "yandex#map",
+                behaviors:['drag','dblClickZoom']
+            });
+            map.controls
+            .add("zoomControl",{"top":207.5,"left":10});	
+            map.geoObjects
+                .add(objects['Point4'] = new ymaps.Placemark([58.209751, 68.266921], {"iconContent":"H2O+","xname":"Point4","metaType":"Point"},{"preset":"twirl#blueStretchyIcon","zIndex":"10","visible":true,"iconImageHref":"http://api-maps.yandex.ru/2.0.39/release/../images/2c3d90d4e522c1f62b6cf3e59f7a877d.png","iconImageSize":[37,42],"iconImageOffset":[-10,-40],"iconContentLayout":"twirl#geoObjectIconContent","balloonContentBodyLayout":"twirl#geoObjectBalloonBodyContent","hintContentLayout":"twirl#geoObjectHintContent"}));
+
+        };
+        </script>
+        <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&onload=fid_1140437"></script>
+        <!-- Карта (конец) --> 
+    </section>
+    <!-- map / end --> 
     
     <!-- ---------------------------------------------------- -->
     
@@ -238,6 +323,31 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+    <!-- nicescroll -->
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script>
+		$(document).ready(
+            function() {
+	           $("body").niceScroll();
+            }            
+        );	
+        $(document).ready(
+            function() {
+	           $(".modal").niceScroll();
+            }            
+        );
+        $(document).ready(
+            function() {
+	           $(".reviews_review__text_full").niceScroll();
+            }            
+        );
+    </script>
+        <noscript>
+            <style>
+                html, body {
+                    overflow:visible;
+                }
+            </style>
+        </noscript>
 </body>
 </html>

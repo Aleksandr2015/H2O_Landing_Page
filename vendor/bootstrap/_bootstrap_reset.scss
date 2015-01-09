@@ -7,8 +7,38 @@
     padding-right: 0 !important;
 }
 
+.modal-dialog {
+    width: 970px;
+}
+
 /* disable default bootstrap form input box shadow on focus */
 
 .form-control:focus {
      box-shadow: none !important;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.modal-content {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.modal-content .feedback_form_wrapper {
+    background: rgba(255, 255, 255, 0.9) !important;
+    height: 430px !important;
+}
+
+.modal-content .feedback_form_wrapper__form___input {
+    border: 1px solid #ccc;
+}
+
+button.close {
+    margin-right: 10px;
+    margin-top: -5px;
+    font-size: 65px;
 }
